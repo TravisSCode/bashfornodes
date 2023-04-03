@@ -1,6 +1,6 @@
 #!/bin/bash
 
-function install() {
+
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt install -y clang build-essential binaryen cmake protobuf-compiler
 sudo apt install tmux
@@ -19,5 +19,3 @@ make node-release
 echo "Нода Gear установлена"
 tmux
 ./gear
-
-}
