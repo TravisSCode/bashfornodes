@@ -3,6 +3,7 @@
 function install() {
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt install -y clang build-essential binaryen cmake protobuf-compiler
+sudo apt install tmux
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 rustup toolchain add nightly
@@ -16,6 +17,7 @@ rm gear-nightly-linux-x86_64.tar.xz
 git checkout stable
 make node-release
 echo "Нода Gear установлена"
+tmux
 ./gear
 
 }
