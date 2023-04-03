@@ -18,4 +18,3 @@ git checkout stable
 make node-release
 echo "Нода Gear установлена"
 tmux
-./gear
