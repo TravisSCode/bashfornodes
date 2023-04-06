@@ -38,9 +38,9 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 
-sudo systemctl daemon-reload
-sudo systemctl enable nibid
-sudo systemctl restart nibid
+NETWORK=nibiru-itn-1
+curl -s https://networks.itn.nibiru.fi/$NETWORK/genesis > $HOME/.nibid/config/genesis.json
+shasum -a 256 $HOME/.nibid/config/genesis.json
 
 
 
