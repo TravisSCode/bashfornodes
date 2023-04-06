@@ -24,11 +24,6 @@ tar -xvf nibid_0.19.2_linux_amd64.tar.gz && mv nibirud nibid
 
 cp nibid /bin/nibid
 
-NETWORK=nibiru-itn-1
-curl -s https://networks.itn.nibiru.fi/$NETWORK/genesis > $HOME/.nibid/config/genesis.json
-shasum -a 256 $HOME/.nibid/config/genesis.json
-
-
 
 cd $HOME
 
