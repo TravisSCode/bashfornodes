@@ -24,6 +24,21 @@ tar -xvf nibid_0.19.2_linux_amd64.tar.gz && mv nibirud nibid
 
 cp nibid /bin/nibid
 
+sudo tee /etc/systemd/system/nibid.service > /dev/null <<EOF
+[Unit]
+Description=nibiru
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=$(which nibid) start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
+EOF
 
 cd $HOME
 
