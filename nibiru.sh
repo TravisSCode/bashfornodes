@@ -24,20 +24,6 @@ tar -xvf nibid_0.19.2_linux_amd64.tar.gz && mv nibirud nibid
 
 cp nibid /bin/nibid
 
-sudo tee /etc/systemd/system/nibid.service > /dev/null <<EOF
-[Unit]
-Description=Nibid
-After=network-online.target
-[Service]
-User=root
-ExecStart=/usr/bin/nibid start
-Restart=always
-RestartSec=3
-LimitNOFILE=65535
-[Install]
-WantedBy=multi-user.target
-EOF
-
 NETWORK=nibiru-itn-1
 curl -s https://networks.itn.nibiru.fi/$NETWORK/genesis > $HOME/.nibid/config/genesis.json
 shasum -a 256 $HOME/.nibid/config/genesis.json
