@@ -24,7 +24,7 @@ tar -xvf nibid_0.19.2_linux_amd64.tar.gz && mv nibirud nibid
 
 cp nibid /bin/nibid
 
-sudo tee /etc/systemd/system/nibidd.service > /dev/null <<EOF
+sudo tee /etc/systemd/system/nibid.service > /dev/null <<EOF
 [Unit]
 Description=Nibid
 After=network-online.target
