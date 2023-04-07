@@ -18,7 +18,7 @@ source ~/.profile
 cd $HOME
 git clone https://github.com/NibiruChain/nibiru
 cd nibiru
-git checkout v0.15.0
+git checkout v0.19.2
 make install
 
 cd $HOME
