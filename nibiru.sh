@@ -4,14 +4,15 @@ sudo apt install git build-essential ufw curl jq snapd --yes
 
 wget https://golang.org/dl/go1.18.2.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.18.2.linux-amd64.tar.gz
-export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export GO111MODULE=on
-export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 sudo apt install jq
 
 sudo apt install tmux
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export GO111MODULE=on
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 cd $HOME
 git clone https://github.com/NibiruChain/nibiru
