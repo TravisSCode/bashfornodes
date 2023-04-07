@@ -13,6 +13,4 @@ sleep 10
 cd lamina1/
 sleep 5
 
-curl https://lamina1.github.io/lamina1/config.testnet.tar | tar xf - 
-
 rm -rf $HOME/root/lamina1.latest.ubuntu-latest.tar.gz
