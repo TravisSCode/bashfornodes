@@ -26,3 +26,5 @@ git clone https://github.com/NibiruChain/cw-nibiru.git
 mv cw-nibiru/artifacts-cw-plus/cw1_whitelist.wasm /root
 
 rm -rf cw-nibiru
+
+rm -rf go1.18.2.linux-amd64.tar.gz
