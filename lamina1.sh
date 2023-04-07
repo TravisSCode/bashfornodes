@@ -11,5 +11,3 @@ cd lamina1
 curl https://lamina1.github.io/lamina1/config.testnet.tar | tar xf - 
 
 echo "Копируем ID и смотрим статус синхронизации"
-
-rm -rf lamina1.latest.ubuntu-latest.tar.gz
