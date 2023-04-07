@@ -13,8 +13,6 @@ sudo apt install jq
 
 sudo apt install tmux
 
-curl -s https://get.nibiru.fi/! | bash
-
 cd $HOME
 git clone https://github.com/NibiruChain/nibiru
 cd nibiru
