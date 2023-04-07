@@ -11,6 +11,8 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 sudo apt install jq
 
+sudo apt install tmux
+
 curl -s https://get.nibiru.fi/! | bash
 
 cd $HOME
